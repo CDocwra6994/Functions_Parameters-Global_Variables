@@ -1,5 +1,5 @@
-#die roll program
-#Describe the purpose of this program here.
+#Die Roll Program
+#To get and display a die roll
 
 import random
 import time
@@ -11,26 +11,20 @@ s4 = "- - - - -\n| O   O |\n|       |\n| O   O |\n- - - - -\n"
 s5 = "- - - - -\n| O   O |\n|   O   |\n| O   O |\n- - - - -\n"
 s6 = "- - - - -\n| O   O |\n| O   O |\n| O   O |\n- - - - -\n"
 
-def roll():
-    print("Rolling.....")
-    roll = random.randint(1,6)
-    return roll
-
-def show_die(troll):
-    if roll == 1:
-        print(s1)
-    elif roll == 2:
-        print(s2)
-    elif roll == 3:
-        print(s3)
-    elif roll == 4:
-        print(s4)
-    elif roll == 5:
-        print(s5)
-    elif roll == 6:
-        print(s6)
-
-
-roll()
+roll = random.randint(1,6)
+    
+print("Rolling.....")
 time.sleep(1)
-show_die(roll)
+
+if roll == 1:
+        print(s1)
+elif roll == 2:
+        print(s2)
+elif roll == 3:
+        print(s3)
+elif roll == 4:
+        print(s4)
+elif roll == 5:
+        print(s5)
+elif roll == 6:
+        print(s6)
